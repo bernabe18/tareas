@@ -1,0 +1,136 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+header {
+    background-image: url(./img/design1_image1.jpg);
+    background-size: 100%;
+    height: 300px;
+    background-repeat: no-repeat;
+    position: initial;
+    bottom: 55px;
+}
+
+h1 {
+    font-size: 39px;
+    display: inline-block;
+    position: absolute;
+    top: 5px;
+    font-family: cursive;
+
+}
+
+#logo {
+    display: none;
+    width: 100px;
+}
+
+#logo-2 {
+    width: 150px;
+
+}
+
+figure {
+    display: inline-block;
+    position: relative;
+    left: 81%;
+    bottom: 110px;
+}
+
+#jugador {
+    width: 150px;
+    height: 150px;
+}
+
+.infot {
+    height: 50px;
+
+
+}
+
+nav>a {
+    text-decoration: none;
+    display: block;
+    padding: 15px 5px;
+    position: relative;
+    top: 35px;
+    font-family: cursive;
+}
+
+#active {
+    color: black;
+}
+
+
+
+nav {
+    position: absolute;
+    display: inline-block;
+    left: 6%;
+}
+
+
+main>figure {
+    display: none;
+    position: relative;
+}
+
+.lista-tarea {
+    position: relative;
+    left: 28%;
+    bottom: 125px;
+    padding: 25px 5px;
+    font-family: cursive;
+}
+.lista-tarea p{
+    padding-bottom: 15px;
+}
+
+li{
+    list-style-type: none;
+}
+
+h4{
+    font-family: cursive;
+    
+    
+}
+
+h3 {
+    display: none
+}
+
+h2 {
+    background-color: black;
+    color: white;
+    text-align: center;
+    font-family: cursive;
+}
+
+
+#info-c {
+    position: relative;
+    display: inline-block;
+    left: 25%;
+    bottom: 105px;
+}
+
+#info-c p {
+    padding-bottom: 15px;
+    font-family: cursive;
+}
+
+.lista {
+    position: relative;
+    display: inline-block;
+    left: 25%;
+    bottom: 95px;
+    font-family: cursive;
+    width: 65%;
+}
+
+.lista p{
+    padding-bottom: 25px;
+}

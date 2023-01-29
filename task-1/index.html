@@ -1,31 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
     <link rel="shortcut icon" href="./img/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="./diseño1.css">
+    <!-- <link rel="stylesheet" href="./css/diseño2.css"> -->
+
 </head>
 <body>
+    <h1>Minghty Ducks Hokey League</h1>
     <header>
         <figure>
-            <img src="./img/Logo_Mighty_ducks-01.png" alt="logo-ducks" width="100">
+            <img src="./img/Logo_Mighty_ducks-01.png" alt="logo-ducks" id="logo">
         </figure>
-        <h1>Minghty Ducks Hokey League</h1>
     </header>
+        <h2>Upcoming Events</h2>
+    <figure class="box-logo">
+        <img src="./img/Logo_Mighty_ducks-01.png" alt="logo-ducks" id="logo-2">
+    </figure>
     <nav>
-        <a href="#">Home</a>
-        <a href="./about.html">About MDHL</a>
+        <a href="#" id="active">Home</a>
+        <a href="./about.html">About</a>
         <a href="./contact.html">Contact</a>
     </nav>
+
     <main>
         <figure>
-            <img src="./img/hockey_1.jpg" alt="jugador" width="110">
-        </figure>
-        <h3>Upcoming Events</h3>
-        <div>
-            <ul>                
+            <img src="./img/hockey_1.jpg" alt="jugador" id="jugador">
+        </figure>      
+        <div class="lista-tarea">
+            <ul>
                 <li>
                     <h4>Agust 4</h4>
                     <p>MDSL Fundraiser</p>
@@ -36,10 +44,11 @@
                 </li>
                 <li>
                     <h4>September 1</h4>
-                    Fist Game of the Season(check game schedule for details)
-                </li>               
+                    <p> Fist Game of the Season(check game schedule for details)</p>
+                </li>
             </ul>
         </div>
     </main>
 </body>
-</html>  
+
+</html>
