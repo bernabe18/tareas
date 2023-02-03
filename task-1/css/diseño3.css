@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+body {
+    background-color: lightyellow;
+}
+
 header {
     background-image: url(../img/design1_image2.jpg);
     background-size: 100%;
@@ -14,38 +18,42 @@ header {
 #logo {
     width: 100px;
     display: none;
+}
 
+#logo-2 {
+    width: 112px;
 }
 
 
-
 #jugador {
-    width: 150px;
-    height: 150px;
-    display: none;
+    width: 273px;
+    margin: 10px;
 }
 
 nav>a {
     font-family: cursive;
-    display: inline-block;
     color: white;
     border: 1px solid black;
     background-color: blue;
     text-decoration: none;
-    box-shadow: 3px 3px 9px 2px black;
-    position: relative;
+    box-shadow: -8px 4px 8px -4px rgb(243, 238, 238);
     text-align: center;
     width: 65px;
     margin: 5px;
-    font-weight: 2;
 }
 
 nav {
-    position: relative;
-    left: 64%;
-    bottom: 33rem;
-    display: inline-block;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4px;
+}
 
+.box-nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    background-color: black;
+    margin: 0px 0px 22px;
 }
 
 
@@ -53,28 +61,41 @@ nav {
     background-color: green;
 }
 
+
+
 h2 {
-    background-color: black;
     color: white;
-    text-align: center;
     font-family: cursive;
 }
 
 h1 {
+
     font-family: cursive;
-    font-weight: 100;
-    display: inline-block;
-    width: 79%;
-    font-size: 65px;
-    height: 92px;
+    color: yellow;
+    backdrop-filter: blur(2px);
+
+}
+
+#titulo {
+    position: relative;
+    top: 159%;
+    left: 29%;
+    color: black;
+}
+
+.titulos {
+   
+    margin: 5px;
+}
+
+.titulos h6 {
+    text-decoration-line: underline;
 }
 
 .lista-tarea {
-    display: inline-block;
-    position: relative;
-    left: 28%;
-    bottom: 170px;
-    width: 65%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .lista-tarea li {
@@ -83,22 +104,97 @@ h1 {
     font-family: cursive;
 }
 
-.box-logo {
-    display: inline-block;
-    position: relative;
-    left: 8%;
-    top: 15px;
-}
-
-#logo-2 {
-    width: 200px;
-}
- 
-#info-c p{
-    padding: 5px;
+#info-c p {
+    padding: 10px;
     list-style-type: none;
     font-family: cursive;
-    position: relative;
-    left: 30%;
-    bottom: 120px;
+
+}
+
+#info-c {
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 5px;
+}
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 35px;
+    margin: 20px;
+}
+
+.m-rules {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 35px;
+}
+
+.m-igame {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    margin: 20px;
+    align-content: flex-start;
+   
+}
+
+.m-about {
+    display: flex;
+    flex-wrap: inherit;
+}
+
+.lista-orde ol li {
+    margin: 3px 20px 11px 26px;
+}
+
+.lista-orde ul li {
+    list-style: lower-latin;
+}
+
+.box-lista ul li {
+    padding: 12px 20px 11px;
+    list-style: none;
+}
+
+.contactos {
+    display: flex;
+    justify-content: space-between;
+    margin: 7px 3px 20px 18px;
+}
+
+
+.titulo-rules {
+    text-align: center;
+}
+
+.list-desc1 dd {
+    margin: 20px;
+}
+
+dt {
+    font-weight: bold;
+    margin: 20px;
+}
+
+.list-desc1 {
+    margin: 20px;
+}
+
+#list-o {
+    margin: 20px;
+}
+
+.list-desc2 {
+    margin: 20px;
+}
+
+.list-desc2 dd {
+    margin: 20px;
+}
+
+td {
+    padding: 2px 14px;
 }
