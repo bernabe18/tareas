@@ -38,7 +38,7 @@ nav>a {
     text-decoration: none;
     box-shadow: -8px 4px 8px -4px rgb(243, 238, 238);
     text-align: center;
-    width: 65px;
+    
     margin: 5px;
 }
 
@@ -63,7 +63,7 @@ nav {
 
 
 
-h2 {
+#tit {
     color: white;
     font-family: cursive;
 }
@@ -197,4 +197,27 @@ dt {
 
 td {
     padding: 2px 14px;
+}
+form {
+    padding: 20px;
+    margin: 3px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    background-color: bisque;
+    align-items: baseline;
+}
+
+fieldset {
+    margin: 5px;
+    padding: 7px;
+}
+span#grado {
+    font-size: x-small;
+    position: relative;
+    bottom: 8px;
+}
+label {
+    padding: 5px;
+    margin: 4px
 }
