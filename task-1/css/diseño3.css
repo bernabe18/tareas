@@ -31,15 +31,17 @@ header {
 }
 
 nav>a {
+    font-size: xx-small;
+    border-radius: 10px;
     font-family: cursive;
     color: white;
     border: 1px solid black;
     background-color: blue;
     text-decoration: none;
-    box-shadow: -8px 4px 8px -4px rgb(243, 238, 238);
+    box-shadow: -8px 4px 8px -4px rgb(243 238 238);
     text-align: center;
-    
     margin: 5px;
+    padding: 5px
 }
 
 nav {
@@ -61,8 +63,6 @@ nav {
     background-color: green;
 }
 
-
-
 #tit {
     color: white;
     font-family: cursive;
@@ -76,6 +76,13 @@ h1 {
 
 }
 
+form>h2 {
+    text-align: center;
+    font-size: 30px;
+    margin: 10px;
+    padding: 6px;
+}
+
 #titulo {
     position: relative;
     top: 159%;
@@ -84,7 +91,7 @@ h1 {
 }
 
 .titulos {
-   
+
     margin: 5px;
 }
 
@@ -138,7 +145,7 @@ main {
     flex-direction: column;
     margin: 20px;
     align-content: flex-start;
-   
+
 }
 
 .m-about {
@@ -198,26 +205,444 @@ dt {
 td {
     padding: 2px 14px;
 }
+
 form {
+    width: 51%;
     padding: 20px;
-    margin: 3px;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
     background-color: bisque;
-    align-items: baseline;
+    margin: auto;
+
 }
 
 fieldset {
     margin: 5px;
     padding: 7px;
 }
-span#grado {
-    font-size: x-small;
-    position: relative;
-    bottom: 8px;
+
+
+input,
+span {
+    margin-bottom: 10px;
+
 }
-label {
-    padding: 5px;
-    margin: 4px
+
+@media only screen and (min-width: 320px) and (max-width: 767px) {
+    header {
+        background-image: url(../img/design1_image2.jpg);
+        height: 125px;
+        background-repeat: no-repeat;
+    }
+
+    header>h1 {
+        font-size: medium;
+    }
+
+    nav>a {
+        font-size: xx-small;
+
+    }
+
+    nav {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0px;
+        justify-content: space-evenly;
+    }
+
+    #dt-regis {
+        font-size: 14px;
+    }
+
+    #dd-regis {
+        font-size: xx-small;
+        line-height: 105%;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    }
+
+    #tit {
+        font-size: x-small;
+    }
+
+    form>h2 {
+        font-size: medium;
+    }
+
+    form {
+        width: 69%;
+        padding: 20px;
+        background-color: bisque;
+        margin: auto;
+    }
+
+    #grade,
+    #school-s {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        flex-direction: column;
+    }
+
+    label {
+        font-size: xx-small;
+    }
+
+    legend,
+    #gender-s {
+        font-size: 11px;
+    }
+
+    .uniforms {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+
+    .positions {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+
+    .school {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #titulo {
+        position: relative;
+        top: 174%;
+        left: 11%;
+        color: black;
+    }
+
+    td {
+        font-size: xx-small;
+        padding: 0px 7px;
+    }
+
+    #ubi-title {
+        color: black;
+        font-size: 26px;
+    }
+
+    iframe {
+        width: 90px;
+        height: 211px;
+    }
+
+    .box-lista ul li {
+        margin: 5px;
+        padding: 4px 10px 12px;
+        list-style: none;
+        font-size: small;
+    }
+
+    main {
+        font-size: xx-small;
+    }
+
+    #jugador {
+        width: 125px;
+    }
+
+    .m-contact {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-content: flex-start;
+        gap: 0px;
+    }
+
+    .m-about {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    #info-c>p {
+        padding: 5px;
+    }
+
+}
+
+
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+    header {
+        background-image: url(../img/design1_image2.jpg);
+        height: 245px;
+        background-repeat: no-repeat;
+    }
+
+    header>h1 {
+        font-size: xx-large;
+    }
+
+    nav>a {
+        font-size: initial;
+    }
+
+    nav {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0px;
+        justify-content: space-evenly;
+    }
+
+    #dt-regis {
+        font-size: 19px;
+    }
+
+    #dd-regis {
+        font-size: x-large;
+        line-height: 100%;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    }
+
+    #tit {
+        font-size: larger;
+    }
+
+    form>h2 {
+        font-size: xx-large;
+    }
+
+    form {
+        width: 69%;
+        padding: 20px;
+        background-color: bisque;
+        margin: auto;
+    }
+
+    #grade,
+    #school-s {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        flex-direction: column;
+    }
+
+    label {
+        font-size: larger;
+        display: inline-block;
+    }
+
+    legend,
+    #gender-s {
+        font-size: x-large;
+        margin-right: 28px;
+    }
+
+    .uniforms {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+
+    .positions {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+
+    .school {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #titulo {
+        position: relative;
+        top: 171%;
+        left: 26%;
+        color: black;
+        margin: 9px;
+    }
+
+    td {
+        font-size: x-large;
+        padding: 0px 39px;
+    }
+
+    #ubi-title {
+        color: black;
+        font-size: 26px;
+    }
+
+    iframe {
+        width: 118px;
+        height: 211px;
+    }
+
+    .box-lista ul li {
+        margin: 5px;
+        padding: 4px 10px 12px;
+        list-style: none;
+        font-size: x-large;
+    }
+
+
+    #jugador {
+        width: 125px;
+    }
+
+    #info-c>p {
+        padding: 5px;
+    }
+
+    .m-about {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .m-rules,
+    .m-contact {
+        font-size: x-large;
+    }
+
+    #enviar {
+        margin: 15px;
+        padding: 15px;
+        border-radius: 12px;
+    }
+
+    .lista-tarea {
+        font-size: larger;
+    }
+
+    .titulos {
+        font-size: x-large;
+    }
+
+}
+
+@media only screen and (min-width: 1024px) and (max-width: 1439px) {
+
+
+    nav>a {
+        font-size: x-large;
+        border-radius: 10px;
+        font-family: cursive;
+        color: white;
+        border: 1px solid black;
+        background-color: blue;
+        text-decoration: none;
+        box-shadow: -8px 4px 8px -4px rgb(243 238 238);
+        text-align: center;
+        margin: 5px;
+        padding: 5px;
+    }
+
+    #tit {
+        color: white;
+        font-family: cursive;
+        font-size: xx-large;
+    }
+
+    h1 {
+        font-size: xxx-large;
+        font-family: cursive;
+        color: yellow;
+        backdrop-filter: blur(2px);
+    }
+
+    .lista-tarea {
+        font-size: xx-large;
+    }
+
+    #jugador {
+        width: 303px;
+        margin: 12px;
+    }
+
+    #logo-2 {
+        width: 215px;
+    }
+
+    #info-c {
+        margin: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 5px;
+        font-size: xx-large;
+    }
+
+    .m-rules {
+        font-size: xx-large;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 35px;
+    }
+
+    .titulos {
+        font-size: xx-large;
+        margin: 5px;
+    }
+
+    td {
+        font-size: xx-large;
+        padding: 6px;
+    }
+
+    th {
+        font-size: 34px;
+        padding: 13px 25px;
+    }
+
+    .box-lista {
+        font-size: x-large;
+    }
+
+    table {
+        margin: 30px;
+        padding: 20px;
+    }
+
+    form {
+        display: flex;
+        width: 58%;
+        padding: 20px;
+        background-color: bisque;
+        margin: auto;
+        flex-direction: column;
+    }
+
+    #dd-regis {
+        font-size: x-large;
+    }
+
+    #dt-regis {
+        font-size: xx-large;
+        font-weight: bold;
+        margin: 20px;
+    }
+
+    span {
+        margin-bottom: 10px;
+        font-size: xx-large;
+    }
+
+    #grado {
+        font-size: larger;
+    }
+
+    input {
+        margin: 15px;
+        padding: 6px;
+    }
+    .uniforms {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+
+    .positions {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+
+    .school {
+        display: flex;
+        flex-direction: column;
+    }
+
+
 }

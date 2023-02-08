@@ -33,57 +33,57 @@
         <form action="./show_data.html
         " method="get">
             <h2>Registation Form</h2>
-            <fieldset>
+           
                 <label for="name">
-                    <span> PLayer's First Name :</span>
+                    <span> PLayer's First Name:</span>
                     <input type="text" name="name" id="name">
                 </label>
                 
                 <label>
-                    <span> Last Name :</span>
+                    <span> Last Name:</span>
                     <input type="text" name="last_name">
                 </label>
-            </fieldset>
-            <fieldset>
+            
                 <label>
-                    <span>Street Anddress :</span>
+                    <span>Street Anddress:</span>
                     <input type="text" name="street">
                 </label>
-
-            </fieldset>
-            <fieldset>
+                <br>
+           
                 <label>
-                    <span>City :</span>
+                    <span>City:</span>
                     <input type="text" name="city">
                 </label>
+               
                 <label>
-                    <span>Zip Code</span>
-                    <input type="number" name="codez">
+                    <span>Zip Code:</span>
+                    <input type="number" name="codez" max="5">
                 </label>
-            </fieldset>
-            <fieldset>
+                <br>
+            
 
                 <label>
-                    <span>Birth Date (mm/dd/yy) :</span>
+                    <span>Birth Date (mm/dd/yy):</span>
                     <input type="text" name="birth">
                 </label>
 
-                <legend>Gender </legend>
-                <label>
+                <span id="gender-s">Gender:</span> 
+                <label >
                     <span>Famele</span>
                     <input type="radio" name="gender" value="famale">
+                    
                 </label>
 
                 <label>
                     <span>Male</span>
                     <input type="radio" name="gender" value="male">
                 </label>
-            </fieldset>
+           <!-- fin -->
 
-            <fieldset>
-
-                <legend>Grade :</legend>
+            <fieldset id="grade">
+                <span>Grade:</span>
                 <label>
+                   
                     <input type="checkbox" name="pre-school" value="pre-school">
                     <span>Pre-School</span>
                 </label>
@@ -112,8 +112,9 @@
 <!--fin 1 parte  -->
             <fieldset class="school">
                 <legend>Wich elementary school do you live near ?</legend>
-                <span>Closest School :</span>
+                <span  id="school-s">Closest School:</span>
                 <label>
+                   
                     <input type="radio" name="school" value="AJ Katzenmaier">
                     <span>AJ Katzenmaier</span>
                 </label>
@@ -125,6 +126,7 @@
                     <input type="radio" name="school" value="Howard A Yeager">
                     <span>Howard A Yeager</span>
                 </label>
+                
                 <label>
                     <input type="radio" name="school" value="Marjorie P Hart">
                     <span>Marjorie P Hart</span>
@@ -139,7 +141,7 @@
                 </label>
             </fieldset>
 
-            <fieldset>
+            <fieldset class="positions">
                 <legend>What position(s) do you normally play ? (check all that apply)</legend>
                 <label>
                     <input type="checkbox" name="forward" value="forward">
@@ -159,8 +161,8 @@
                     <span>Goalkeeper</span>
                 </label>
             </fieldset>
-            <fieldset>
-                <legend>Uniform size :</legend>
+            <fieldset class="uniforms">
+                <legend>Uniform size:</legend>
                 <label>
                     <input type="checkbox" name="youthSmall" value="Youth Small">
                     <span>Youth Small</span>
@@ -191,12 +193,12 @@
                 </label>
             </fieldset>
             <dl>
-                <dt>Permission to Play</dt>
-                <dd>
+                <dt id="dt-regis">Permission to Play</dt>
+                <dd id="dd-regis">
                     i, the parent or guardian of the minor registrant, agree that the registrant and i will abide by all the rules of the Minghty Ducks League (MDHL). in recognizing the possibility of physical injury associated with hokey and in consideration for the "League" accepting the registrant for its hokey programs and activities, I hebery relase, discharge, and/or otherwise indemnify MDHL, their employees and associated personnel and voluteers,including the facilities used for practices and games, against any claim by or on behalf of the registrant as a result of the regist registrant s participation in the programand/obeing transported to or from MDHL sponsored activities,which trasportation. By signing below, I herebyagree andauthorizethe above.In addition, by signing below, lalso acknowledge that I have read the cancelation policy and agree to its terms.
                 </dd>
             </dl>
-            <fieldset>
+           <br>
                 <label>
                     <span>Parent/GuardianSignature :</span>
                     <input type="text" name="firma">
@@ -205,8 +207,7 @@
                     <span>Date :</span>
                     <input type="text" name="fecha">
                 </label>
-            </fieldset>
-           <input type="submit" value="Enviar">
+           <input type="submit" value="Enviar" id="enviar">
         </form>
 
 
